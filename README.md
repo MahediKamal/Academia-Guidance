@@ -29,6 +29,13 @@ Upon installation in this way, MySQL creates a user account named `root`. his us
 
   exit;
 ```
+### Creating academiaGuidance database
+```
+    sudo mysql    // login as root
+    CREATE DATABASE academiaGuidance;
+    GRANT CREATE, ALTER, DROP, INSERT, UPDATE, DELETE, SELECT, REFERENCES, RELOAD on academiaGuidance TO 'therap'@'localhost' WITH GRANT OPTION;
+
+```
 login as new user
 ```
   mysql -u therap -p      // give the user password 
